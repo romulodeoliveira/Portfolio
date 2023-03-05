@@ -1,0 +1,245 @@
+@media (max-width: 1300px) {
+  .header,
+  .div_apresentacao,
+  .div_experiencia,
+  .div__formacao,
+  .div_contato {
+    max-width: 62.5rem;
+  }
+
+  /* Section One */
+
+  .descricao_apresentacao h2 {
+    font-size: 3.5rem;
+  }
+
+  .descricao_apresentacao h2::before {
+    top: -1.6rem;
+    left: -3.1rem;
+    height: 1rem;
+  }
+
+  .descricao_apresentacao p {
+    font-size: 1rem;
+  }
+
+  /* Section Two */
+
+  .experiencia_h2,
+  .formacao {
+    font-size: 7.5rem;
+  }
+
+  .experiencias_descricao {
+    font-size: 1rem;
+  }
+
+  .info_experiencia {
+    gap: 2rem;
+  }
+
+  /* Section Three */
+
+  .formação_descricao {
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    margin-bottom: 3rem;
+  }
+
+  .grade_curso_superior {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .curso_superior {
+    width: 9rem;
+    height: 8rem;
+  }
+
+  .tipo_superior,
+  .instituicao_superior,
+  .nome_curso_intensivo,
+  .carga_horaria_intensivo,
+  .nome_idioma {
+    font-size: 0.7;
+  }
+
+  /* Section Four */
+
+  .mensagem_contato {
+    font-size: 1rem;
+  }
+
+  .meios_contato {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header,
+  .div_apresentacao,
+  .div_experiencia,
+  .div__formacao,
+  .div_contato {
+    max-width: 46.875rem;
+  }
+
+  .div_apresentacao,
+  .div_experiencia,
+  .div__formacao {
+    gap: 5rem;
+  }
+
+  /* Section One */
+
+  .descricao_apresentacao h2 {
+    font-size: 2.5rem;
+  }
+
+  .descricao_apresentacao h2::before,
+  .curso_intensivo_h2::before,
+  .idiomas_h2::before,
+  .mensagem_contato::before {
+    display: none;
+  }
+
+  .descricao_apresentacao p {
+    font-size: 0.9rem;
+  }
+
+  /* Section Two */
+
+  .experiencia_h2,
+  .formacao {
+    font-size: 5rem;
+  }
+
+  .experiencias_descricao {
+    font-size: 0.9rem;
+  }
+
+  .grade_experiencias {
+    margin-top: 2rem;
+  }
+
+  .ano_experiencia {
+    left: 1rem;
+    top: -1.1rem;
+  }
+
+  .info_experiencia {
+    gap: 2rem;
+  }
+
+  /* Section Three */
+
+  .formação_descricao {
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    margin-bottom: 3rem;
+  }
+
+  .grade_curso_superior {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .curso_superior {
+    width: 9rem;
+    height: 8rem;
+  }
+
+  .tipo_superior,
+  .instituicao_superior,
+  .nome_curso_intensivo,
+  .carga_horaria_intensivo,
+  .nome_idioma {
+    font-size: 0.7;
+  }
+
+  /* Section Four */
+
+  .mensagem_contato {
+    font-size: 0.9rem;
+  }
+
+  .meios_contato {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .header {
+    display: grid;
+    place-content: center;
+  }
+
+  .header h1 {
+    display: grid;
+    text-align: center;
+  }
+
+  .header nav ul {
+    flex-wrap: wrap;
+  }
+
+  .apresentacao,
+  .experiencia_section,
+  .sectionthree,
+  .sectionfour {
+    padding: 1rem;
+  }
+
+  .experiencia_section,
+  .sectionthree,
+  .sectionfour {
+    padding-top: 3rem;
+  }
+
+  .header,
+  .div_apresentacao,
+  .div_experiencia,
+  .div__formacao,
+  .div_contato {
+    max-width: 31.25rem;
+  }
+
+  .div_apresentacao,
+  .div_experiencia,
+  .div__formacao,
+  .div_contato,
+  .info_experiencia {
+    grid-template-columns: 1fr;
+  }
+
+  .div_experiencia,
+  .div_apresentacao,
+  .info_experiencia,
+  .div__formacao,
+  .div_contato {
+    gap: 2rem;
+  }
+
+  .grade_experiencias {
+    display: grid;
+    place-content: center;
+  }
+
+  .info_experiencia {
+    max-width: 400px;
+  }
+
+  .experiencia_h2,
+  .formacao {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+}
+
+/* @media (max-width: 620px) {
+  .info_experiencia {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    place-content: center;
+  }
+} */

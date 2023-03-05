@@ -1,0 +1,382 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  display: block;
+}
+
+/* Header */
+
+header {
+  display: grid;
+  justify-self: center;
+  place-items: center;
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  place-items: center;
+  justify-content: space-between;
+  max-width: 78.125rem;
+  width: 100%;
+}
+
+header div h1 span {
+  font-weight: 100;
+  font-style: italic;
+}
+
+header div nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+header div nav ul li {
+  list-style: none;
+}
+
+header div nav ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 1rem;
+}
+
+header div nav ul li a:hover {
+  background-color: #f5f5f5;
+  border-radius: 0.4rem;
+}
+
+/* Section One */
+
+.div_apresentacao {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 78.125rem;
+  gap: 10rem;
+}
+
+.apresentacao {
+  padding: 5rem 0 4rem 0;
+  display: grid;
+  justify-self: center;
+  place-items: center;
+}
+
+.minha_foto img {
+  border-radius: 0.4rem;
+  max-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.descricao_apresentacao {
+  display: grid;
+  gap: 3rem;
+}
+
+.descricao_apresentacao h2 {
+  font-size: 4.5rem;
+  position: relative;
+}
+
+.descricao_apresentacao h2::before {
+  display: inline-block;
+  content: url("/img/detalhe.svg");
+  position: absolute;
+  top: -1.4rem;
+  left: -2rem;
+  z-index: -1;
+}
+
+.descricao_apresentacao p {
+  font-size: 1.5rem;
+}
+
+.link_projeto {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Section Two */
+
+.div_experiencia {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10rem;
+  max-width: 78.125rem;
+}
+
+.experiencia_section {
+  padding: 5rem 0 4rem 0;
+  display: grid;
+  justify-self: center;
+  place-items: center;
+}
+
+.experiencia_h2 {
+  color: #e0e0e0;
+  text-transform: uppercase;
+  font-size: 9rem;
+  word-break: break-all;
+}
+
+.experiencias_descricao {
+  font-size: 1.5rem;
+  margin-top: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.grade_experiencias {
+  position: relative;
+}
+
+.ano_experiencia {
+  position: absolute;
+  left: -6rem;
+  top: 1.2rem;
+  font-size: 0.7rem;
+  font-weight: 100;
+}
+
+.info_experiencia {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 5rem;
+  background: #f5f5f5;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  align-items: start;
+}
+
+.empresa_descricao h3,
+.cargo_tags h3 {
+  height: 2rem;
+}
+
+.empresa_descricao {
+  display: grid;
+  gap: 1rem;
+}
+
+.empresa_descricao h3 {
+  position: relative;
+}
+
+.empresa_descricao p {
+  color: #525252;
+}
+
+.empresa_descricao h3::before {
+  content: "";
+  position: absolute;
+  width: 0.25rem;
+  height: 1.25rem;
+  left: -1.1rem;
+  top: 0rem;
+  background: linear-gradient(180deg, #b6f829 0%, #67dd0a 100%);
+}
+
+.cargo_tags {
+  display: grid;
+  gap: 1rem;
+}
+
+.tags_experiencias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-content: start;
+}
+
+.tags_experiencias p {
+  padding: 0.6rem;
+  background: #ffffff;
+  border-radius: 0.4rem;
+}
+
+/* Section Three */
+
+.sectionthree {
+  display: grid;
+  justify-self: center;
+  place-items: center;
+  padding: 5rem 0 4rem 0;
+  background-color: #141414;
+  color: #ffffff;
+}
+
+.div__formacao {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10rem;
+  max-width: 78.125rem;
+}
+
+.formacao {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 9rem;
+  word-break: break-all;
+}
+
+.formação_descricao {
+  font-size: 1.5rem;
+  margin-top: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.grade_curso_superior {
+  display: flex;
+  gap: 3rem;
+}
+
+.curso_superior {
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  place-content: start;
+  background: #090909;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  width: 11rem;
+  height: 10rem;
+}
+
+.nome_superior {
+  word-break: normal;
+  position: relative;
+}
+
+.nome_superior::before {
+  content: "";
+  position: absolute;
+  width: 0.25rem;
+  height: 1.25rem;
+  left: -1.1rem;
+  top: 0.1rem;
+  background: linear-gradient(180deg, #b6f829 0%, #67dd0a 100%);
+}
+
+.tipo_superior,
+.instituicao_superior {
+  color: #a3a3a3;
+}
+
+.curso_intensivo,
+.idiomas {
+  margin-top: 3rem;
+}
+
+.curso_intensivo_h2,
+.idiomas_h2 {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.curso_intensivo_h2::before {
+  position: absolute;
+  display: inline-block;
+  content: url("/img/cursos.svg");
+  top: -0.2rem;
+  left: -2.5rem;
+}
+
+.idiomas_h2::before {
+  position: absolute;
+  display: inline-block;
+  content: url("/img/idiomas.svg");
+  top: -0.2rem;
+  left: -2.5rem;
+}
+
+.div_nome_curso_intensivo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.nome_curso_intensivo,
+.nome_idioma {
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+
+.carga_horaria_intensivo {
+  font-weight: 200;
+}
+
+.dominio_idioma {
+  font-weight: 200;
+}
+
+.div_nome_idioma {
+  margin-top: 1rem;
+}
+
+/* Section Four */
+
+.sectionfour {
+  display: grid;
+  justify-self: center;
+  place-items: center;
+  padding: 5rem 0 4rem 0;
+  background: #000;
+  color: #fff;
+}
+
+.div_contato {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 2fr;
+  gap: 10rem;
+  max-width: 78.125rem;
+}
+
+.mensagem_contato {
+  font-size: 1.4rem;
+  position: relative;
+}
+
+.mensagem_contato::before {
+  position: absolute;
+  display: inline-block;
+  content: url("/img/detalhe.svg");
+  top: -9.5rem;
+  left: 0;
+}
+
+.meios_contato {
+  display: grid;
+  place-content: center;
+  font-weight: bold;
+  font-size: 2rem;
+  gap: 1rem;
+}
+
+/* Footer */
+
+footer {
+  display: grid;
+  justify-self: center;
+  place-items: center;
+  padding: 4rem 0;
+  color: #fff;
+  background: #000;
+  font-weight: 200;
+}
+
+.div_footer {
+  display: grid;
+  max-width: 78.125rem;
+  display: block;
+}
